@@ -1,0 +1,32 @@
+package giris;
+import java.util.Scanner;
+public class class3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        /*Armut : 2,14 TL
+        Elma : 3,67 TL
+        Domates : 1,11 TL
+        Muz: 0,95 TL
+        Patlıcan : 5,00 TL */
+        double armutgram, elmagram, domatesgram, muzgram, patlicangram;
+        System.out.println("Armut kaç gram: ");
+        armutgram = input.nextDouble();
+        System.out.println("Elma kaç gram: ");
+        elmagram = input.nextDouble();
+        System.out.println("Domates kaç gram: ");
+        domatesgram = input.nextDouble();
+        System.out.println("Muz kaç gram: ");
+        muzgram = input.nextDouble();
+        System.out.println("Patlıcan kaç gram: ");
+        patlicangram = input.nextDouble();
+        double armutFiyat,elmaFiyat,domatesFiyat,muzFiyat,patlicanFiyat;
+        armutFiyat = 2.14/1000;
+        elmaFiyat = 3.67/1000;
+        domatesFiyat = 1.11/1000;
+        muzFiyat = 0.95/1000;
+        patlicanFiyat = 5.0/1000;
+
+        double toplamucret =(armutgram*armutFiyat) + (elmagram*elmaFiyat) + (domatesgram*domatesFiyat) + (muzgram*muzFiyat) + (patlicangram * patlicanFiyat);
+        System.out.println("Toplam tutar: "+toplamucret);
+    }
+}
